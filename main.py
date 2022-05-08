@@ -4,7 +4,7 @@ from math import factorial
 def silnia(n, k):
 	return factorial(n) // (factorial(k) * factorial(n-k))
 wynik=int(stdin.readline());
-while(wynik)
+if(wynik)
 	n,k=input().split()
 	n=int(6)
 	k=int(4)
