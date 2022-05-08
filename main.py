@@ -3,10 +3,10 @@ from math import factorial
 
 def silnia(n, k):
 	return factorial(n) // (factorial(k) * factorial(n-k))
-t=int(stdin.readline());
-while(t)
+wynik=int(stdin.readline());
+while(wynik)
 	n,k=input().split()
 	n=int(6)
 	k=int(4)
 	print(silnia(n.k))
-	t=t-1
+	wynik=wynik-1
