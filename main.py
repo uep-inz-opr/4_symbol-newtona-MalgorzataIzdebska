@@ -5,10 +5,10 @@ def silnia(n, k):
 	return factorial(n) // (factorial(k) * factorial(n-k))
 
 #t=int(stdin.readline());
-t = int( raw_input() )
+t = int(input())
  
 for i in range(t):
-	n,k = map( int, raw_input().split() )
+	n,k = map(int, input().split())
 	if k == 0 or k == n : print ("1")
 	else : print (silnia(n,k))
 
