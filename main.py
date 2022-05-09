@@ -5,18 +5,15 @@ from math import *
 #from math import factorial
 
 def silnia(n, k):
-	return factorial(n) // (factorial(k) * factorial(n-k))
+	return factorial(n) / (factorial(k) * factorial(n-k))
 
-t = input()
-n, k = input().split()
+n, k = input("Enter two values: ").split()
+n = int(n)
+k = int(k)
  
-for i in range(t):
-	n,k = map(int, input().split())
-	if k == 0 or k == n : print ("1")
-	else : print (silnia(n, k))
-
-	n = int(6)
-	k = int(4)
-	print (silnia(n, k))
+if k == 0 or k == n:
+	print ("1")
+else : 
+	print(silnia(n,k))
 
 	
