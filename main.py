@@ -1,5 +1,5 @@
 from math import *
-factorial(6)/(factorial(4)*factorial(3))
+#factorial(6)/(factorial(4)*factorial(2))
 
 
 
@@ -8,8 +8,8 @@ factorial(6)/(factorial(4)*factorial(3))
 #from sys import stdin
 #from math import factorial
 
-#def silnia(n, k):
-	#return factorial(n) // (factorial(k) * factorial(n-1))
+def silnia(n, k):
+	return factorial(6) // (factorial(4) * factorial(2))
 
 #t=int(stdin.readline());
 #t = int(input())
