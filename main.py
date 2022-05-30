@@ -1,19 +1,14 @@
-from math import *
-#factorial(6)/(factorial(4)*factorial(2))
+import math
 
-#from sys import stdin
-#from math import factorial
+def symbol_newtona(n,k):
+    return int(math.factorial(n)/(math.factorial(k)*math.factorial(n-k)))
 
-def silnia(n, k):
-	return factorial(n) / (factorial(k) * factorial(n-k))
+def main():
+    wejsciowe_liczby = input()
+    wejsciowe_liczby = wejsciowe_liczby.split(' ')
+    n = int(wejsciowe_liczby[0])
+    k = int(wejsciowe_liczby[1])
+    print(symbol_newtona(n,k))
 
-n, k = input("Enter two values: ").split()
-n = int(n)
-k = int(k)
- 
-if k == 0 or k == n:
-	print ("1")
-else : 
-	print(silnia(n,k))
-
-	
+if __name__ == '__main__':
+    main()
